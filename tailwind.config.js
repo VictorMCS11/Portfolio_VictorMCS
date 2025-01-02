@@ -10,8 +10,7 @@ export default {
       colors: {
         primary: '#131B22',
         secondary: '#0080CF',
-        // secondary: '#009DFF',
-        tertiary: '#9EDAFF'
+        tertiary: '#9EDAFF',
       },
       backgroundImage:{
         'cv-image-frontpage': "url('./src/assets/cv-image-frontpage.jpg')",

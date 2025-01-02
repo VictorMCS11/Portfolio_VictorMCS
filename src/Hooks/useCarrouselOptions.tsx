@@ -36,14 +36,14 @@ export default function useCarrouselOptions(){
         }
     }, [indexBgImgs])
 
-    const moveLeftCarrousel = (e: MouseEvent<HTMLButtonElement>): void =>{
+    const moveLeftCarrousel = (): void =>{
         setIndexBgImgs(prevState => [
             prevState[0] == 0? 
             bgImgs.length - 1: 
             prevState[0] - 1, 
             prevState[1]])
     }
-    const moveRightCarrousel = (e: MouseEvent<HTMLButtonElement>): void =>{
+    const moveRightCarrousel = (): void =>{
         setIndexBgImgs(prevState => [
             prevState[0] == bgImgs.length - 1? 
             0: 

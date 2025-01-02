@@ -8,6 +8,7 @@ import figma from '../Assets/figma_logo.png'
 import ps from '../Assets/ps_logo.png'
 import cardstore from '../Assets/cardstore_proj.jpg'
 import booktalks from '../Assets/booktalks_proj.jpg'
+import portfolio from '../Assets/portfolio_proj.jpg'
 
 export default function Projects(){
 
@@ -18,6 +19,11 @@ export default function Projects(){
     }
 
     const projects: Project[] = [
+        {
+            img: portfolio,
+            des: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)', 
+            technologies: [ html, css, js, ts, tailwind, ps, figma ]
+        },
         {
             img: cardstore,
             des: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)', 
@@ -46,7 +52,7 @@ export default function Projects(){
                                 <img src={proj.img} alt="" className='w-[200px] md:w-1/2 md:h-4/5 rounded-[20px]' />
                                 <p className='text-center md:text-start text-[14px] md:w-1/2 text-primary dark:text-tertiary float-left'>{proj.des}</p>
                             </div>
-                            <div className='h-1/5 w-full flex gap-3 justify-center md:justify-normal'>
+                            <div className='h-1/5 w-full flex flex-wrap gap-3 justify-center md:justify-normal'>
                             {
                                 proj.technologies.length > 0 
                                 ?(

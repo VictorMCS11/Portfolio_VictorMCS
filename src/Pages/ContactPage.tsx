@@ -48,7 +48,7 @@ export default function ContactPage(){
                 </div>
                 <div>
                     <label htmlFor="" className="ml-2 text-[17px] dark:text-tertiary text-primary">Mensaje</label>
-                    <textarea type="textarea" rows="5" cols="60" name='message' onChange={handleChange} className="mt-1 rounded-[15px] w-full h-[200px] dark:bg-tertiary bg-primary p-4 dark:text-primary text-tertiary outline-none" />
+                    <textarea rows={5} cols={60} name='message' onChange={handleChange} className="mt-1 rounded-[15px] w-full h-[200px] dark:bg-tertiary bg-primary p-4 dark:text-primary text-tertiary outline-none" />
                 </div>
                 <button type='submit' className="mx-auto w-max rounded-[15px] px-4 py-2 border-2 border-secondary dark:bg-tertiary bg-primary font-bold dark:text-primary text-tertiary transform duration-200 hover:text-primary dark:hover:bg-secondary hover:bg-secondary">Enviar</button>
             </form>

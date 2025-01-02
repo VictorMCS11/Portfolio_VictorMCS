@@ -23,7 +23,7 @@ export default function MenuButton({ currentPath }: MenuButtonProps ){
                 id="menu_button" 
                 hidden 
                 onChange={handleChangeMenuButton}
-                checked={`${menuOpened ? "checked" : ""}`} 
+                checked={menuOpened} 
             />
             <label htmlFor="menu_button" className="md:hidden z-30">
                 {

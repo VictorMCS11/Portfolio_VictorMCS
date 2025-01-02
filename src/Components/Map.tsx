@@ -1,4 +1,3 @@
-import { useState, useCallback } from 'react'
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 export default function Map() {

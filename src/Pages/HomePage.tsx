@@ -10,7 +10,9 @@ export default function HomePage(){
     const [icon, sertIcon] = useState(victor_work)
 
     const changeIcon = () =>{
-        sertIcon(prevState => prevState === victor_work ? victor_paz : victor_work)
+        if (window.innerWidth >= 768) { // Puedes ajustar este tamaño según tu necesidad
+            sertIcon(prevState => prevState === victor_work ? victor_paz : victor_work)
+          }
     }
 
     return(
