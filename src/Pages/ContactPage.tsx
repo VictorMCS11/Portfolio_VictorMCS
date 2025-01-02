@@ -35,9 +35,9 @@ export default function ContactPage(){
     }
 
     return(
-        <div className='min-h-[865px] max-w-screen-lg mx-auto transform duration-[.3s] flex flex-col gap-[20px] py-[30px] sm:py-[50px]'>
-            <h1 className="mx-auto text-[35px] dark:text-tertiary text-primary font-bold">Contáctame por correo electrónico</h1>
-            <form onSubmit={sendEmail} className="mx-auto h-max w-full bg-opacity-0 sm:max-w-md sm:dark:bg-primary sm:bg-tertiary rounded-[20px] sm:border-4 dark:border-tertiary border-primary flex flex-col gap-[30px] px-7 sm:py-12">
+        <div className='min-h-[865px] max-w-screen-lg mx-auto transform duration-[.3s] flex flex-col gap-[20px] py-[30px] md:py-[50px]'>
+            <h1 className="text-center mx-auto text-[25px] dark:text-tertiary text-primary font-bold">Contáctame por correo electrónico</h1>
+            <form onSubmit={sendEmail} className="mx-auto h-max w-full bg-opacity-0 md:max-w-md md:dark:bg-primary md:bg-tertiary rounded-[20px] md:border-4 dark:border-tertiary border-primary flex flex-col gap-[30px] md:px-7 md:py-12">
                 <div>
                     <label htmlFor="" className="ml-2 text-[17px] dark:text-tertiary text-primary">Nombre</label>
                     <input type="text" name='name' onChange={handleChange} className="mt-1 rounded-[15px] w-full h-[35px] dark:bg-tertiary bg-primary px-4 dark:text-primary text-tertiary outline-none" />

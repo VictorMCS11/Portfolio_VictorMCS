@@ -5,9 +5,15 @@
 .menu_link{
   @apply w-[125px] py-1 rounded-[15px] hover:bg-tertiary dark:hover:bg-primary hover:text-primary dark:hover:text-tertiary text-center transform duration-100
 }
+.menu_link_active{
+  @apply w-[125px] py-1 rounded-[15px] bg-tertiary dark:bg-primary text-primary dark:text-tertiary text-center
+}
 
 .menu_link_open{
   @apply w-[300px] py-[10px] rounded-[15px] font-bold text-center transform duration-200 hover:bg-secondary hover:text-black
+}
+.menu_link_open_active{
+  @apply w-[300px] py-[10px] rounded-[15px] font-bold text-center bg-secondary text-black
 }
 
 .cv_perfil_info{

@@ -6,12 +6,13 @@ import CVPage from './Pages/CVPage'
 import ProjectsPage from './Pages/ProjectsPage'
 import Layout from './Components/Layout'
 import './App.css'
+import Footer from './Components/Footer'
 
 function App() {
 
   return (
     <DarkModeProvider>
-      <div className='min-h-screen mx-auto bg-gradient-to-t from-white to-tertiary dark:from-black dark:to-primary'>
+      <div className='min-h-screen mx-auto bg-gradient-to-t from-white to-tertiary dark:from-black dark:to-primary px-5'>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<HomePage />}></Route>
@@ -21,6 +22,7 @@ function App() {
           </Route>
         </Routes>
       </div>
+      <Footer></Footer>
     </DarkModeProvider>
   )
 }

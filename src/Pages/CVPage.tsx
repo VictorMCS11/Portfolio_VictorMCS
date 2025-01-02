@@ -9,7 +9,7 @@ export default function CVPage(){
     return(
         <>
         <OpenPDF></OpenPDF>
-        <div className='min-h-[865px] max-w-screen-lg mx-auto flex flex-col gap-y-[50px] mt-[50px] px-[15px] md:p-0 transform duration-[.3s]'>
+        <div className='min-h-[865px] max-w-screen-lg mx-auto flex flex-col gap-y-[50px] mt-[50px] md:p-0 transform duration-[.3s]'>
             <div className='w-full h-max md:p-[30px] md:border-4 border-primary dark:border-tertiary flex flex-col md:flex-row items-center justify-around md:bg-white md:bg-opacity-30 md:dark:bg-primary md:dark:bg-opacity-90 rounded-[20px]'>
                 <div className="w-max flex flex-col justify-center items-center">
                     <div className='h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full overflow-hidden border-4 border-primary dark:border-tertiary'>
@@ -44,7 +44,7 @@ export default function CVPage(){
                 <h1 className='mt-[50px] mb-[50px] text-primary dark:text-tertiary text-[25px] font-bold'>Experiencia</h1>
                 <Experiencia />
             </div>
-            <div className='w-full h-max'>
+            <div className='w-full h-max mb-[50px]'>
                 <hr className='border-1 border-primary dark:border-secondary' />
                 <h1 className='mt-[50px] mb-[50px] text-primary dark:text-tertiary text-[25px] font-bold'>Objectivo</h1>
                 <h2 className='text-primary dark:text-tertiary ml-[80px] bg-white dark:bg-tertiary rounded-[10px] bg-opacity-30 dark:bg-opacity-5 px-2'>Estudiante joven con el objetivo de iniciarse en un empleo dispuesto a ampliar sus conocimientos , aprender y así mejorar en el sector.</h2>
