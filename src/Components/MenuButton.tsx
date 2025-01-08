@@ -40,7 +40,7 @@ export default function MenuButton({ currentPath }: MenuButtonProps ){
                     )
                 }
             </label>
-            <div className={`absolute z-20 bg-tertiary dark:bg-primary opacity-95 transform duration-200 inset-0 ${menuOpened? '': 'translate-x-full'} flex flex-row justify-end text-black dark:text-white md:hidden`}>
+            <div className={`absolute z-20 bg-tertiary dark:bg-primary opacity-95 transform duration-200 inset-0 ${menuOpened? 'menu-full': 'menu-hidden'} flex flex-row justify-end text-black dark:text-white md:hidden`}>
                 <div className="relative h-full w-max bg-white dark:bg-black flex flex-col items-center gap-[10px] px-3 py-[80px]">
                     <Link to="/" 
                     onClick={(e) => handleClick(e, currentPath)} className={`${currentPath === "/" ? "menu_link_open_active" : "menu_link_open"}`}>

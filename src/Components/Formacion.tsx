@@ -23,9 +23,9 @@ export default function Formacion(){
             centro: "Colegio San Roque (Alcoy-Alicante)"
         },
         {
-            fecha: "2019-2021",
-            formacion: "Cursando Ciclo Superior de Desarrollo de aplicaciones Multiplataforma",
-            centro: "IFP Centro de formación profesional (semipresencial)"
+            fecha: "2022-2024",
+            formacion: "Cursando Ciclo Superior de Desarrollo de aplicaciones Web",
+            centro: "IFP Centro de Innovación de formación profesional"
         }
     ];
 

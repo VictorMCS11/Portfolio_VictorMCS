@@ -6,7 +6,7 @@ export default function CarrouselLinks(){
 
     return (
       <>
-        <div className="absolute h-[88%] w-[17%] right-[80%] top-1/2 -translate-x-0 -translate-y-1/2 bg-primary dark:bg-tertiary opacity-90 rounded-l-[20px] transform duration-[.1s] hover:scale-105 hover:cursor-pointer hover:opacity-100 z-10 flex">
+        <div className="absolute h-[88%] w-[17%] right-[80%] top-1/2 -translate-x-0 -translate-y-1/2 bg-primary dark:bg-tertiary opacity-90 rounded-l-[20px] transform duration-[.1s] md:hover:scale-105 hover:cursor-pointer hover:opacity-100 z-10 flex">
           <button onClick={moveLeft}>
             <img src={currentDirection} alt="Mover a la izquierda" className="rotate-180 h-full" />
           </button>
@@ -29,7 +29,7 @@ export default function CarrouselLinks(){
             )}
           </div>
         </div>
-        <div className="absolute h-[88%] w-[17%] left-[80%] top-1/2 -translate-x-0 -translate-y-1/2 bg-primary dark:bg-tertiary opacity-90 rounded-r-[20px] transform duration-[.1s] hover:scale-105 hover:cursor-pointer hover:opacity-100 z-10 flex">
+        <div className="absolute h-[88%] w-[17%] left-[80%] top-1/2 -translate-x-0 -translate-y-1/2 bg-primary dark:bg-tertiary opacity-90 rounded-r-[20px] transform duration-[.1s] md:hover:scale-105 hover:cursor-pointer hover:opacity-100 z-10 flex">
           <button onClick={moveRight}>
             <img src={currentDirection} alt="Mover a la derecha" className="h-full" />
           </button>

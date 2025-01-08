@@ -20,6 +20,14 @@
   @apply flex flex-col items-center md:flex-row md:items-start md:gap-2 text-primary dark:text-tertiary bg-white dark:bg-tertiary rounded-[10px] bg-opacity-30 dark:bg-opacity-5 md:bg-opacity-0 md:dark:bg-opacity-0
 }
 
+.menu-full {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-hidden {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

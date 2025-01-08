@@ -11,10 +11,8 @@ export default function useMenuButton(){
 
     const handleClick = ( e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>,
         currentPath: string): void =>{
-        console.log(e.currentTarget.innerHTML)
         const closeMenu = e.currentTarget.innerHTML=== currentPath ?  menuOpened : !menuOpened
         setMenuOpened(closeMenu)
-        console.log(menuOpened)
     }
 
     return { menuOpened, handleChangeMenuButton, handleClick }

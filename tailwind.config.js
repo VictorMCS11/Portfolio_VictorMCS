@@ -13,12 +13,12 @@ export default {
         tertiary: '#9EDAFF',
       },
       backgroundImage:{
-        'cv-image-frontpage': "url('./src/assets/cv-image-frontpage.jpg')",
-        'cv-image-frontpage-dark': "url('./src/assets/cv-image-dark-frontpage.jpg')",
-        'contact-image-frontpage': "url('./src/assets/contact-image-frontpage.jpg')",
-        'contact-image-frontpage-dark': "url('./src/assets/contact-image-dark-frontpage.jpg')",
-        'projects-image-frontpage': "url('./src/assets/projects-image-frontpage.jpg')",
-        'projects-image-frontpage-dark': "url('./src/assets/projects-image-dark-frontpage.jpg')"
+        'cv-image-frontpage': "url('./assets/cv-image-frontpage.jpg')",
+        'cv-image-frontpage-dark': "url('./assets/cv-image-dark-frontpage.jpg')",
+        'contact-image-frontpage': "url('./assets/contact-image-frontpage.jpg')",
+        'contact-image-frontpage-dark': "url('./assets/contact-image-dark-frontpage.jpg')",
+        'projects-image-frontpage': "url('./assets/projects-image-frontpage.jpg')",
+        'projects-image-frontpage-dark': "url('./assets/projects-image-dark-frontpage.jpg')"
       }
     },
   },

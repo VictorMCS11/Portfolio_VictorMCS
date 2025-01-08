@@ -29,7 +29,7 @@ export default function HomePage(){
             <div className='h-full w-full border-4 rounded-[20px] border-primary hover:shadow-lg shadow-black dark:shadow-tertiary dark:hover:shadow-md dark:border-tertiary'>
                 <Map />
             </div>
-            <div className='relative mx-auto h-full w-full md:w-[700px] rounded-[20px] shadow-black dark:shadow-tertiary dark:border-tertiary'>
+            <div className='relative mx-auto h-full w-full md:w-[700px] rounded-[20px] shadow-black dark:shadow-tertiary dark:border-tertiary flex flex-row justify-between'>
                 <CarrouselOptions />
             </div>
         </div>
