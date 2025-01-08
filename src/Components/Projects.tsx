@@ -77,17 +77,15 @@ export default function Projects(){
                                         )
                                     }
                                     </div>
-                                    <div className='md:h-[70px] h-[60px] flex justify-center items-center'>
-                                        <a href={proj.gitLink} target='_blank' className='absolute md:right-2 md:bottom-2 md:h-[60px] md:w-[60px] h-[50px] w-[50px] flex justify-center items-center' >
-                                            <img src={github} alt="" className='rounded-full md:h-[50px] md:w-[50px] h-[40px] w-[40px] hover:h-[50px] hover:w-[50px] transform duration-100 md:hover:h-[60px] md:hover:w-[60px]' />
-                                        </a>
-                                    </div>
+                                    <a href={proj.gitLink} target='_blank' className='m-auto md:right-2 md:bottom-2 md:h-[60px] md:w-[60px] h-[50px] w-[50px] flex justify-center items-center' >
+                                        <img src={github} alt="" className='rounded-full md:h-[50px] md:w-[50px] h-[40px] w-[40px] hover:h-[50px] hover:w-[50px] transform duration-100 md:hover:h-[60px] md:hover:w-[60px]' />
+                                    </a>
                                 </div>
                             </div>
                         </a>
                     ))
                 ):(
-                    <h1>No hay proyectos</h1>
+                    <h1>No se han encontrado proyectos</h1>
                 )
             }
         </>
