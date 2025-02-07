@@ -50,7 +50,7 @@ export default function Projects(){
         {
             img: booktalks,
             titulo: 'Lorem Ipsum',
-            des: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)', 
+            des: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)dd', 
             technologies: [ css, react, ps, figma ],
             webLink: "",
             gitLink: 'https://github.com/VictorMCS11/BookTalks_FrontEnd'
@@ -63,8 +63,8 @@ export default function Projects(){
                 projects.length > 0 ?
                 (
                     projects.map(proj =>(
-                        <a href={proj.webLink} target='_blank'>
-                            <div key={proj.img} className='w-full h-max bg-white bg-opacity-30 dark:bg-primary border-4 border-primary dark:border-tertiary rounded-[20px] p-2 transform duration-200 hover:cursor-pointer hover:shadow-md hover:shadow-primary dark:hover:shadow-md dark:hover:shadow-tertiary flex flex-col gap-2'>
+                        <a href={proj.webLink} target='_blank' key={proj.des}>
+                            <div className='w-full h-max bg-white bg-opacity-30 dark:bg-primary border-4 border-primary dark:border-tertiary rounded-[20px] p-2 transform duration-200 hover:cursor-pointer hover:shadow-md hover:shadow-primary dark:hover:shadow-md dark:hover:shadow-tertiary flex flex-col gap-2'>
                                 <div className='lg:w-full h-4/5 flex flex-col gap-2 items-center lg:flex-row lg:items-start'>
                                     <img src={proj.img} alt="" className='w-[200px] lg:w-1/2 lg:h-4/5 rounded-[20px]' />
                                     <div>
@@ -78,7 +78,7 @@ export default function Projects(){
                                         proj.technologies.length > 0 
                                         ?(
                                             proj.technologies.map(tech =>(
-                                                <img src={tech} alt="" className='h-[25px]' />
+                                                <img src={tech} alt="" className='h-[25px]' key={tech} />
                                             ))
                                         ):(
                                             <h1>No hay tecnologias</h1>

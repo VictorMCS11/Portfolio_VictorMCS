@@ -19,13 +19,13 @@ export default function Formacion(){
         },
         {
             fecha: "2019-2021",
-            formacion: "Ciclo Medio de Informática",
+            formacion: "Ciclo Medio en Sistemas Microinformáticos y Redes (SMR)",
             centro: "Colegio San Roque (Alcoy-Alicante)"
         },
         {
             fecha: "2022-2024",
-            formacion: "Cursando Ciclo Superior de Desarrollo de aplicaciones Web",
-            centro: "IFP Centro de Innovación de formación profesional"
+            formacion: "Cursando Ciclo Superior en Desarrollo de aplicaciones Web (DAW)",
+            centro: "IFP Centro de Innovación de formación profesional semipresencial (Alicante-Madrid)"
         }
     ];
 
