@@ -10,7 +10,7 @@ export default function CVPage(){
 
     const [pass, setPass] = useState(false)
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
 
         if(e.target.key.value === '1234.'){
