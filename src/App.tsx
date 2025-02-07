@@ -4,6 +4,7 @@ import { DarkModeProvider } from './Contexts/DarkModeContext'
 import Layout from './Components/Layout'
 import './App.css'
 import Footer from './Components/Footer'
+import loading from './Assets/loading.svg'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <DarkModeProvider>
       <div className='min-h-screen mx-auto bg-gradient-to-t from-white to-tertiary dark:from-black dark:to-primary px-5'>
-        <Suspense fallback={<div className="text-center mt-10">Cargando...</div>}>
+        <Suspense fallback={<div className="w-full min-h-[700px] flex justify-center items-center"><img className='' src={loading} alt="" /></div>}>
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<HomePage />}></Route>
