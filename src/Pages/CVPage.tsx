@@ -12,11 +12,14 @@ export default function CVPage(){
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
-
-        if(e.target.key.value === '1234.'){
-            setPass(true)
-        }else{
-            setPass(false)
+        
+        const form = e.currentTarget; // Accedemos al formulario actual
+        const keyInput = form.elements.namedItem("key") as HTMLInputElement; // Obtenemos el input "key"
+    
+        if (keyInput?.value === '1234.') {
+            setPass(true);
+        } else {
+            setPass(false);
         }
     }
 
