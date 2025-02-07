@@ -69,7 +69,7 @@ export default function Projects(){
                                     <img src={proj.img} alt="" className='w-[200px] lg:w-1/2 lg:h-4/5 rounded-[20px]' />
                                     <div>
                                         <h2 className='font-bold text-[17px] text-center lg:text-start text-secondary'>{proj.titulo}</h2>
-                                        <p className='text-center lg:text-start text-[14px]text-primary dark:text-tertiary'>{proj.des}</p>
+                                        <p className='text-center lg:text-start text-[13px] text-primary dark:text-tertiary'>{proj.des}</p>
                                     </div>
                                 </div>
                                 <div className='h-1/5 w-full flex flex-col lg:flex-row gap-3 lg:justify-between'>
