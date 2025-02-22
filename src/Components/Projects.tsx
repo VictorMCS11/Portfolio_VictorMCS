@@ -7,6 +7,9 @@ import tailwind from '../Assets/tailwind_logo.png'
 import figma from '../Assets/figma_logo.png'
 import ps from '../Assets/ps_logo.png'
 import github from '../Assets/github-logo_2.png'
+import node from '../Assets/nodejs_logo.png'
+import express from '../Assets/express_logo.png'
+import sql from '../Assets/sql_logo.png'
 import cardstore from '../Assets/cardstore_proj.jpg'
 import booktalks from '../Assets/booktalks_proj.jpg'
 import portfolio from '../Assets/portfolio_proj.jpg'
@@ -41,10 +44,10 @@ export default function Projects(){
         },
         {
             img: booktalks,
-            titulo: 'Lorem Ipsum',
-            des: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)', 
-            technologies: [ css, react, ps, figma ],
-            webLink: "",
+            titulo: 'BookTalks',
+            des: 'Proyecto final de DAW que consiste en una app web responsive creada con React y css nativo donde los usuarios pueden crear su cuenta, participar en discusiones dentro de los foros disponibles, buscar libros mediante un buscador integrado, escribir reseñas y asignar puntuaciones a los libros. La aplicación se conecta con una API externa para obtener información sobre los libros.',
+            technologies: [ css, react, node, express, sql, ps, figma ],
+            webLink: "http://booktalks.site/",
             gitLink: 'https://github.com/VictorMCS11/BookTalks_FrontEnd'
         },
         {

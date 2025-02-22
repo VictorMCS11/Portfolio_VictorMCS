@@ -19,7 +19,7 @@ export default function ContactPage(){
 
         emailjs.send(
             'service_6rhl1am',    // ID del servicio configurado en EmailJS
-            'template_05xwyvc',   // ID de la plantilla configurada en EmailJS
+            'template_gndzyil',   // ID de la plantilla configurada en EmailJS
             formData,             // Datos a enviar
             'ig5BlAG_BjtsZKVrS'     // Clave pública obtenida de EmailJS
         ).then(

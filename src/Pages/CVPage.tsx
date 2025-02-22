@@ -12,7 +12,7 @@ export default function CVPage(){
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
-        
+
         const form = e.currentTarget; // Accedemos al formulario actual
         const keyInput = form.elements.namedItem("key") as HTMLInputElement; // Obtenemos el input "key"
     
@@ -118,7 +118,7 @@ export default function CVPage(){
             <div className='w-full h-max mb-[50px]'>
                 <hr className='border-1 border-primary dark:border-secondary' />
                 <h1 className='mt-[50px] mb-[50px] text-primary dark:text-tertiary text-[25px] font-bold'>Objectivo</h1>
-                <h2 className='text-primary dark:text-tertiary ml-[80px] bg-white dark:bg-tertiary rounded-[10px] bg-opacity-30 dark:bg-opacity-5 px-2'>Estudiante joven con el objetivo de iniciarse en un empleo dispuesto a ampliar sus conocimientos , aprender y así mejorar en el sector.</h2>
+                <h2 className='text-primary dark:text-tertiary ml-[80px] bg-white dark:bg-tertiary rounded-[10px] bg-opacity-30 dark:bg-opacity-5 px-2'>Joven con el objetivo de iniciarse en un empleo dispuesto a ampliar sus conocimientos , aprender y así mejorar en el sector.</h2>
             </div>
         </div>
         </>
