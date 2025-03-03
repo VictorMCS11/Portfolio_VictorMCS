@@ -10,7 +10,7 @@ export default function Experiencia(){
         {
             fecha: "2021",
             trabajo: "AIJU Instituto Tecnológico",
-            funcion: "Ayudante auxiliar de programación (4 meses)"
+            funcion: "Programador (8 meses)"
         },
         {
             fecha: "2024",

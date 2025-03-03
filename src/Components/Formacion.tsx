@@ -24,7 +24,7 @@ export default function Formacion(){
         },
         {
             fecha: "2022-2024",
-            formacion: "Cursando Ciclo Superior en Desarrollo de aplicaciones Web (DAW)",
+            formacion: "Ciclo Superior en Desarrollo de aplicaciones Web (DAW)",
             centro: "IFP Centro de Innovación de formación profesional semipresencial (Alicante-Madrid)"
         }
     ];
