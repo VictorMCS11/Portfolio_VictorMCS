@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+// Contexts/DarkModeContext.tsx
+import { createContext, useState, useEffect } from "react";
 
 type ContainerProps = {
     children: React.ReactNode
@@ -23,12 +24,12 @@ const OscureModeContextProps: DarkModeContextPropsType = {
 export const DarkModeContext = createContext<DarkModeContextPropsType>(OscureModeContextProps)
 
 export function DarkModeProvider({children}: ContainerProps){
-
     const [darkMode, setDarkMode] = useState<boolean>(initialDarkMode)
 
-    const applyDarkMode = (isDark: boolean) =>{
+    // Aplicar el modo oscuro cuando el componente se monta
+    useEffect(() => {
         if(bodyElement){
-            if(isDark){
+            if(darkMode){
                 bodyElement.classList.add('dark')
                 window.localStorage.setItem('darkMode', 'dark')
             }else{
@@ -36,7 +37,11 @@ export function DarkModeProvider({children}: ContainerProps){
                 window.localStorage.setItem('darkMode', '')
             }
         }
+    }, [darkMode]) // Esto se ejecuta cuando darkMode cambia
+
+    const applyDarkMode = (isDark: boolean) => {
         setDarkMode(isDark)
+        // La aplicación de clases y localStorage se maneja en el useEffect
     }
     
     return(

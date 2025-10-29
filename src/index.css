@@ -52,6 +52,25 @@ body {
   min-height: 100vh; */
 }
 
+/* En tu archivo CSS global o módulo CSS */
+.hover-container .hover-icon {
+    display: none;
+}
+
+.hover-container .default-icon {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .hover-container:hover .hover-icon {
+        display: block;
+    }
+
+    .hover-container:hover .default-icon {
+        display: none;
+    }
+}
+
 /*a {
   font-weight: 500;
   color: #646cff;

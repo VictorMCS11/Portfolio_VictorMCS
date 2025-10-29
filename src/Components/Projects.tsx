@@ -62,40 +62,54 @@ export default function Projects(){
         }
     ]
 
+    const handleGitHubClick = (e: React.MouseEvent, gitLink: string) => {
+        e.stopPropagation(); // Evita que el click se propague al card
+        window.open(gitLink, '_blank');
+    };
+
     return(
         <>
             {
                 projects.length > 0 ?
                 (
                     projects.map(proj =>(
-                        <a href={proj.webLink} target='_blank' key={proj.des}>
-                            <div className='w-full h-max bg-white bg-opacity-30 dark:bg-primary border-4 border-primary dark:border-tertiary rounded-[20px] p-2 transform duration-200 hover:cursor-pointer hover:shadow-md hover:shadow-primary dark:hover:shadow-md dark:hover:shadow-tertiary flex flex-col gap-2'>
-                                <div className='lg:w-full h-4/5 flex flex-col gap-2 items-center lg:flex-row lg:items-start'>
-                                    <img src={proj.img} alt="" className='w-[200px] lg:w-1/2 lg:h-4/5 rounded-[20px]' />
-                                    <div>
-                                        <h2 className='font-bold text-[17px] text-center lg:text-start text-secondary'>{proj.titulo}</h2>
-                                        <p className='text-center lg:text-start text-[13px] text-primary dark:text-tertiary'>{proj.des}</p>
-                                    </div>
-                                </div>
-                                <div className='h-1/5 w-full flex flex-col lg:flex-row gap-3 lg:justify-between'>
-                                    <div className='w-full flex flex-wrap gap-3 justify-center lg:justify-normal'>
-                                    {
-                                        proj.technologies.length > 0 
-                                        ?(
-                                            proj.technologies.map(tech =>(
-                                                <img src={tech} alt="" className='h-[25px]' key={tech} />
-                                            ))
-                                        ):(
-                                            <h1>No hay tecnologias</h1>
-                                        )
-                                    }
-                                    </div>
-                                    <a href={proj.gitLink} target='_blank' className='m-auto lg:right-2 lg:bottom-2 lg:h-[60px] lg:w-[70px] h-[50px] w-[50px] flex justify-center items-center' >
-                                        <img src={github} alt="" className='rounded-full lg:h-[50px] lg:w-[50px] h-[40px] w-[40px] hover:h-full hover:w-full transform duration-100' />
-                                    </a>
+                        <div 
+                            key={proj.des}
+                            className='w-full h-max bg-white bg-opacity-30 dark:bg-primary border-4 border-primary dark:border-tertiary rounded-[20px] p-2 transform duration-200 hover:cursor-pointer hover:shadow-md hover:shadow-primary dark:hover:shadow-md dark:hover:shadow-tertiary flex flex-col gap-2'
+                            onClick={() => window.open(proj.webLink, '_blank')}
+                        >
+                            <div className='lg:w-full h-4/5 flex flex-col gap-2 items-center lg:flex-row lg:items-start'>
+                                <img src={proj.img} alt="" className='w-[200px] lg:w-1/2 lg:h-4/5 rounded-[20px]' />
+                                <div>
+                                    <h2 className='font-bold text-[17px] text-center lg:text-start text-secondary'>{proj.titulo}</h2>
+                                    <p className='text-center lg:text-start text-[13px] text-primary dark:text-tertiary'>{proj.des}</p>
                                 </div>
                             </div>
-                        </a>
+                            <div className='h-1/5 w-full flex flex-col lg:flex-row gap-3 lg:justify-between'>
+                                <div className='w-full flex flex-wrap gap-3 justify-center lg:justify-normal'>
+                                {
+                                    proj.technologies.length > 0 
+                                    ?(
+                                        proj.technologies.map(tech =>(
+                                            <img src={tech} alt="" className='h-[25px]' key={tech} />
+                                        ))
+                                    ):(
+                                        <h1>No hay tecnologias</h1>
+                                    )
+                                }
+                                </div>
+                                <button 
+                                    onClick={(e) => handleGitHubClick(e, proj.gitLink)}
+                                    className='m-auto lg:right-2 lg:bottom-2 lg:h-[60px] lg:w-[70px] h-[50px] w-[50px] flex justify-center items-center bg-transparent border-none cursor-pointer'
+                                >
+                                    <img 
+                                        src={github} 
+                                        alt="GitHub" 
+                                        className='rounded-full lg:h-[50px] lg:w-[50px] h-[40px] w-[40px] hover:h-full hover:w-full transform duration-100' 
+                                    />
+                                </button>
+                            </div>
+                        </div>
                     ))
                 ):(
                     <h1>No se han encontrado proyectos</h1>
