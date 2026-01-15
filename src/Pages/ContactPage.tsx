@@ -19,10 +19,10 @@ export default function ContactPage(){
 
         try {
             await emailjs.send(
-                'service_6rhl1am',
+                'service_pm208zg',
                 'template_gndzyil',
                 formData,
-                'ig5BlAG_BjtsZKVrS'
+                'IVw85Z6fsrBwDeR9G'
             )
             alert('Correo enviado correctamente.')
             setFormData({ name: '', email: '', message: '' }) // Limpiar formulario

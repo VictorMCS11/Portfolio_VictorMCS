@@ -10,7 +10,7 @@ function App() {
 
   const HomePage = lazy(() => import('./Pages/HomePage'))
   const ContactPage = lazy(() => import('./Pages/ContactPage'))
-  const CVPage = lazy(() => import('./Pages/CVPage'))
+  // const CVPage = lazy(() => import('./Pages/CVPage'))
   const ProjectsPage = lazy(() => import('./Pages/ProjectsPage'))
 
   return (
@@ -21,13 +21,13 @@ function App() {
             <Route path='/' element={<Layout />}>
               <Route index element={<HomePage />}></Route>
               <Route path='/contacto' element={<ContactPage />}></Route>
-              <Route path='/cv' element={<CVPage />}></Route>
+              {/* <Route path='/cv' element={<CVPage />}></Route> */}
               <Route path='/proyectos' element={<ProjectsPage />}></Route>
             </Route>
           </Routes>
         </Suspense>
       </div>
-      <Footer></Footer>
+      <Footer />
     </DarkModeProvider>
   )
 }

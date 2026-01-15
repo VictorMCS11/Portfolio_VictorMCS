@@ -16,10 +16,10 @@ export default function Menu(){
                     className={`${currentPath === "/" ? "menu_link_active" : "menu_link"}`}>
                         Inicio
                     </Link>
-                    <Link to="/cv" 
+                    {/* <Link to="/cv" 
                     className={`${currentPath === "/cv" ? "menu_link_active" : "menu_link"}`}>
                         CV
-                    </Link>
+                    </Link> */}
                     <Link to="/proyectos" 
                     className={`${currentPath === "/proyectos" ? "menu_link_active" : "menu_link"}`}>
                         Proyectos

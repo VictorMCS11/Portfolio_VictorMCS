@@ -9,11 +9,11 @@ export default function useCarrouselOptions(){
 
     const [indexBgImgs, setIndexBgImgs] = useState<number[]>([0, darkMode?1:0])
     const bgImgs: string[][] = [
-        ['bg-cv-image-frontpage', 'bg-cv-image-frontpage-dark'],
+        // ['bg-cv-image-frontpage', 'bg-cv-image-frontpage-dark'],
         ['bg-projects-image-frontpage', 'bg-projects-image-frontpage'],
         ['bg-contact-image-frontpage', 'bg-contact-image-frontpage-dark']
     ]
-    const bgImgTitles: string[] = ['CURRÍCULUM VITAE', 'MIS PROYECTOS', 'CONTÁCTAME']
+    const bgImgTitles: string[] = ['MIS PROYECTOS', 'CONTÁCTAME']
 
     const [currentBgImgTitle, setCurrentBgImgTitLe] = useState<string>()
     const [currentBgImg, setCurrentBgImg] = useState<string>()
