@@ -1,11 +1,11 @@
-import html from '../Assets/html_logo.png'
-import css from '../Assets/css_logo.png'
-import js from '../Assets/js_logo.png'
-import ts from '../Assets/ts_logo.png'
-import react from '../Assets/react_logo.png'
-import tailwind from '../Assets/tailwind_logo.png'
-import figma from '../Assets/figma_logo.png'
-import ps from '../Assets/ps_logo.png'
+import html from '../assets/html_logo.png'
+import css from '../assets/css_logo.png'
+import js from '../assets/js_logo.png'
+import ts from '../assets/ts_logo.png'
+import react from '../assets/react_logo.png'
+import tailwind from '../assets/tailwind_logo.png'
+import figma from '../assets/figma_logo.png'
+import ps from '../assets/ps_logo.png'
 
 export default function Tecnologias(){
 

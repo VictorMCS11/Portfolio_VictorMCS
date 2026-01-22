@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import useDarkMode from "../Hooks/useDarkMode"
+import useDarkMode from "./useDarkMode"
 import arrow from '../assets/arrow.svg'
 import arrow_dark from '../assets/arrow_dark.svg'
 

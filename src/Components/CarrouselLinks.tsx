@@ -1,4 +1,4 @@
-import useCarrouselLinks from "../Hooks/useCarrouselLinks"
+import useCarrouselLinks from "../hooks/useCarrouselLinks"
 
 export default function CarrouselLinks(){
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import useDarkMode from "../Hooks/useDarkMode"
+import useDarkMode from "./useDarkMode"
 import direction from '../assets/direction.svg'
 import direction_dark from '../assets/direction-dark.svg'
 import github from '../assets/github-logo.png'

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import useCarrouselOptions from "../Hooks/useCarrouselOptions"
+import useCarrouselOptions from "../hooks/useCarrouselOptions"
 
 export default function CarrouselOptions(){
 

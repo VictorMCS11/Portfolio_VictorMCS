@@ -1,10 +1,10 @@
-import face from '../Assets/face_cv.png'
-import Formacion from '../Components/Formacion'
-import Tecnologias from '../Components/Tecnologias'
-import Experiencia from '../Components/Experiencia'
-import OpenPDF from '../Components/OpenPDF'
+import face from '../assets/face_cv.png'
+import Formacion from '../components/Formacion'
+import Tecnologias from '../components/Tecnologias'
+import Experiencia from '../components/Experiencia'
+import OpenPDF from '../components/OpenPDF'
 import { useState } from 'react'
-import check from '../Assets/check.svg'
+import check from '../assets/check.svg'
 
 export default function CVPage(){
 

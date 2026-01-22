@@ -1,17 +1,17 @@
 import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { DarkModeProvider } from './Contexts/DarkModeContext'
-import Layout from './Components/Layout'
+import { DarkModeProvider } from './contexts/DarkModeContext'
+import Layout from './components/Layout'
 import './App.css'
-import Footer from './Components/Footer'
-import loading from './Assets/loading.svg'
+import Footer from './components/Footer'
+import loading from './assets/loading.svg'
 
 function App() {
 
-  const HomePage = lazy(() => import('./Pages/HomePage'))
-  const ContactPage = lazy(() => import('./Pages/ContactPage'))
+  const HomePage = lazy(() => import('./pages/HomePage'))
+  const ContactPage = lazy(() => import('./pages/ContactPage'))
   // const CVPage = lazy(() => import('./Pages/CVPage'))
-  const ProjectsPage = lazy(() => import('./Pages/ProjectsPage'))
+  const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
 
   return (
     <DarkModeProvider>

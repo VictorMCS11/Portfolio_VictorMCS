@@ -1,8 +1,8 @@
-import Map from '../Components/Map'
-import CarrouselLinks from '../Components/CarrouselLinks'
-import victor_work from '../Assets/victor-icon-work.png'
-import victor_paz from '../Assets/victor-icon-paz.png'
-import CarrouselOptions from '../Components/CarrouselOptions'
+import Map from '../components/Map'
+import CarrouselLinks from '../components/CarrouselLinks'
+import victor_work from '../assets/victor-icon-work.png'
+import victor_paz from '../assets/victor-icon-paz.png'
+import CarrouselOptions from '../components/CarrouselOptions'
 
 export default function HomePage(){
     const center = {

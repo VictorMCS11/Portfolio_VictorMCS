@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import useDarkMode from "../Hooks/useDarkMode"
-import useMenuButton from "../Hooks/useMenuButton"
+import useDarkMode from "../hooks/useDarkMode"
+import useMenuButton from "../hooks/useMenuButton"
 import menu_button_open from '../assets/menu_button_open.svg'
 import menu_button_open_dark from '../assets/menu_button_open_dark.svg'
 import menu_button_close from '../assets/menu_button_close.svg'
