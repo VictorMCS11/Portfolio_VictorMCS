@@ -72,8 +72,8 @@ export default function Projects(){
 
             <p>Historial de <strong>pedidos completados</strong> en tercera página separada. Demuestra habilidades en desarrollo Fullstack, gestión de estado, operaciones CRUD, modelado de datos con Prisma y diseño de UI/UX responsiva.</p>`,
             technologies: [ next, ts, tailwind ], // Ajusta según las tecnologías que uses
-            webLink: "#", // Añade tu link de deploy aquí
-            gitLink: '#' // Añade tu link de GitHub aquí
+            webLink: "https://quiosco-de-comida-con-next-js-14-se.vercel.app/", // Añade tu link de deploy aquí
+            gitLink: 'https://github.com/VictorMCS11/Quiosco-de-Comida-con-Next.js-14-Server-Actions-App-Router-TypesScript-Prisma-ZOD' // Añade tu link de GitHub aquí
         },
         {
             img: cardstore,
@@ -84,7 +84,7 @@ export default function Projects(){
 
             <p>Destacan funcionalidades como formularios, modales dinámicos con mensajes personalizados, efectos de scroll que modifican la interfaz según la posición, y un sistema que prioriza la usabilidad y accesibilidad, con diseño <strong>responsive</strong>, además de buenas prácticas en manipulación del DOM, gestión de eventos y organización modular de funcionalidades.</p>`,
             technologies: [ html, css, js, ps, figma ],
-            webLink: "https://cardstore.cloud/",
+            webLink: "https://card-store-cyan.vercel.app/",
             gitLink: 'https://github.com/VictorMCS11/CardStore'
         },
         // {
